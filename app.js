@@ -1,4 +1,4 @@
-function login(){
+function logIn(){
 
     const txtEmail = document.getElementById('txtEmail').value;
     const txtPass = document.getElementById('txtPass').value;
@@ -9,7 +9,7 @@ function login(){
     promise.catch(e => console.log(e.message));
 }
 
-function login(){
+function signIn(){
 
     const txtEmail = document.getElementById('txtEmail').value;
     const txtPass = document.getElementById('txtPass').value;
@@ -18,4 +18,14 @@ function login(){
 
     const promise = auth.createUserWithEmailAndPassword(txtEmail, txtPass);
     promise.catch(e => console.log(e.message));
+}
+
+function verificar(){
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if(firebaseUser){
+            console.log(firebaseUser);
+        }else{
+            console.log('No hay usuario activo');
+        }
+    });
 }
