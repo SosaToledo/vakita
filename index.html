@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vakita</title>
+    <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous"
+    >
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB9a7Yshdt3Ev81t-cRa8Eyr0x-0Vp3EMw",
+            authDomain: "vakita-argentina.firebaseapp.com",
+            databaseURL: "https://vakita-argentina.firebaseio.com",
+            projectId: "vakita-argentina",
+            storageBucket: "",
+            messagingSenderId: "878756690727"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Navbar</a>
+        <div class="form-inline">
+            <input type="email" name="email" id="txtEmail" placeholder="Correo">
+            <input type="password" name="pass" id="txtPass" placeholder="Contraseña">
+            <button id="btnLogin" onclick="login()">
+                Ingresar
+            </button>
+            <button id="btnSingIn" onclick="signin()">
+                Crear Usuario
+            </button>
+        </div>
+    </nav>
+    <section>
+        
+    </section>
+</body>
+</html>
